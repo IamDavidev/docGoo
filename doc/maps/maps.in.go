@@ -19,7 +19,6 @@ func main() {
 		}
 
 		name = strings.TrimSpace(name)
-
 		if u, ok := usernames[name]; ok {
 			fmt.Printf("%q is the username of %q\n", u, name)
 			continue
