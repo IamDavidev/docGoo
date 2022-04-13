@@ -1,2 +1,3 @@
 # docGoo
-documentacion de como es go 
+
+documentacion de como es go
