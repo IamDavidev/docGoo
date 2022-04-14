@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type Estado struct {
 	Nombre string
@@ -13,10 +11,11 @@ type Pais struct {
 	Nombre    string
 	Poblacion uint64
 	Capital   string
-	// EstadosPrincipales []Estado
-}
+	Idioma string
+	Estados []Estado
 
-var Paises = make([]Pais, 3, 5)
+}
+ var Paises = make([]Pais, 3, 5)
 
 func main() {
 	fmt.Println("slices and structs")

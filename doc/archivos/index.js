@@ -1,0 +1,1 @@
+console.log('soy un archio js creado desde go ')

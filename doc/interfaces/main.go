@@ -21,6 +21,11 @@ type Article struct {
 
 type Description interface {
 	RenderDescription() string
+	RenderAuthor() string
+}
+
+type Author interface {
+	RenderAuthor() string
 }
 
 // var globales empiezan con mayuscula
@@ -30,25 +35,40 @@ type Description interface {
 func main() {
 
 	var firstArticle Article = Article{
+
 		Title:  "First Article",
 		Author: "Daniel",
-		Date:   time.Now(),
+		Date:   time.Now(), // retorna la fecha actual
+
 	}
 
 	var secondArticle Article = Article{
+
 		Title:  "Second Article",
 		Author: "Daniel",
 		Date:   time.Now(),
 	}
 	printDescription(secondArticle)
-	printDescription(firstArticle)
+	prinAuthor(firstArticle)
 }
 
-func printDescription(method Description) {
+func printDescription(propArticle Description) {
 
-	fmt.Println(method.RenderDescription())
+	fmt.Println(propArticle.RenderDescription())
+	fmt.Println(propArticle.RenderAuthor())
+
+}
+
+func prinAuthor(propArticle Author) {
+
+	fmt.Println(propArticle.RenderAuthor())
+
 }
 
 func (this Article) RenderDescription() string {
 	return fmt.Sprintf("The %q article(%v) was written by %s .", this.Title, this.Date, this.Author)
+}
+
+func (this Article) RenderAuthor() string {
+	return fmt.Sprintf(" written by %s .", this.Author)
 }

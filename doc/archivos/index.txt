@@ -1,0 +1,9 @@
+hola soy un archivo de txt que va ser leido por el programa 
+escrito en go 
+
+
+cypress es un framework que lo que permite es poder hacer testing en javascript
+de manera que por decirlo asi genera un navegador virtual en que podemos empezar 
+a hacer testingh
+
+cy.get("[id="btnSumbmit"]").click().type("hola")
