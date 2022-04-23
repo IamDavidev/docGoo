@@ -5,17 +5,18 @@ import "fmt"
 var Esponte int = 0
 
 func main() {
-	Expon(3, 3, 0)
+	Expon(3, 3, 1)
 
 }
 
 // 2 2 = 4
 // 2 3 = 8
+
 func Expon(num int, exp int, i int) {
-	if i == 0 {
+	if i == 1 {
 		Esponte = num
 	}
-	if i == exp-1 {
+	if i == exp {
 		return
 	}
 

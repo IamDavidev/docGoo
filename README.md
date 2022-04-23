@@ -1,3 +1,7 @@
 # docGoo
 
-documentacion de como es go
+Doc learn
+
+`git clone`
+
+learn

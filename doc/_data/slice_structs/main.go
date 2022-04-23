@@ -11,11 +11,11 @@ type Pais struct {
 	Nombre    string
 	Poblacion uint64
 	Capital   string
-	Idioma string
-	Estados []Estado
-
+	Idioma    string
+	Estados   []Estado
 }
- var Paises = make([]Pais, 3, 5)
+
+var Paises = make([]Pais, 3, 5)
 
 func main() {
 	fmt.Println("slices and structs")
@@ -25,6 +25,7 @@ func main() {
 	var poblacion uint64
 
 	for {
+
 		fmt.Println("1. Crear Pais")
 
 		fmt.Println("Cual es el nombre del pais que quieres crear?")
